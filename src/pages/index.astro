@@ -2,6 +2,7 @@
 //Código Server Side Only - Momento de la compilación
 
 import PokemonCard from '@components/pokemons/PokemonCard.astro';
+import Title from '@components/shared/Title.astro';
 import type { PokemonListResponse } from '@interfaces/pokemon-list.response';
 import MainLayout from '@layouts/MainLayout.astro';
 
@@ -13,7 +14,7 @@ const title = 'Pokémon Staic | Home'	;
 ---
 
 <MainLayout title={title}>
-	<h1 class="text-3xl">Listado de Pokémons</h1>
+	<Title>Listado Páginado</Title>
 	<hr />
 	<section
 	aria-label="Listado de Pokémons"
