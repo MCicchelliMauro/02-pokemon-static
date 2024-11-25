@@ -77,10 +77,12 @@ image={imageSrc}
 
 <script>
 
-    interface FavoritePokemon {
-        name: string;
-        id: number;
-    }
+    // interface FavoritePokemon {
+    //     name: string;
+    //     id: number;
+    // }
+
+import type { FavoritePokemon } from "@interfaces/favorite-pokemon";
 
     const handlePageLoad = () => {
     let favoritePokemons: FavoritePokemon[] = JSON.parse(
