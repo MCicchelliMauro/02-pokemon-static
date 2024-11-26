@@ -2,6 +2,7 @@
 // import ViewTransitions from 'astro/components/ViewTransitions.astro';
 import NavBar from '@components/shared/NavBar.astro';
 import { siteInfo } from 'src/consts/site-info';
+import ViewTransitions from 'astro/components/ViewTransitions.astro';
 
 // Código Server Side Only - Momento de construccion Build
 
@@ -33,12 +34,14 @@ const { title = siteInfo.title, description = siteInfo.description, image } = As
 
 
 		<title>{ title }</title>
+
+		<ViewTransitions />
 		<!-- <ViewTransitions /> -->
-		<style>
+		<!-- <style>
 			@view-transition {
 			  navigation: auto; /* enabled! */
 			}
-		  </style>
+		  </style> -->
 	</head>
 	<body class="bg-slate-800 text-slate-100 flex flex-col min-h-screen"   >
     	<NavBar />
